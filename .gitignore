@@ -61,4 +61,7 @@ typings/
 .next
 
 # IDE
-.idea
+.idea/
+
+# Omit Minified dist
+dist/
