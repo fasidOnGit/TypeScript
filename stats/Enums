@@ -1,0 +1,12 @@
+Enums:
+    - Follow near-identical syntax rules as normal objects.
+    - Creates an object with the same keys and values when converted from TS to JS.
+    - Primary goal is to signal to other engineers that these are all closely realted values.
+    - Use whenever we have a small fixed set of values that are all closely related and known at compile time.
+
+Cannot add new properties into enum at the run time.
+Everything has to be known at compile time itself.
+Simply put, hardcoded property values.
+
+There is no performance tuning here. primary goal is to just signal to other engineers that these are a bunch of related constants.
+No Performance tuning whatsoever, Boils down to object. :)
