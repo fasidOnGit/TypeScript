@@ -1,31 +1,23 @@
 "use strict";
-var Sorter = /** @class */ (function () {
-    function Sorter(collection) {
-        this.collection = collection;
-    }
-    /**
-     * Bubble sort.
-     */
-    Sorter.prototype.sort = function () {
-        var length = this.collection.length;
-        for (var i = 0; i < length; i++) {
-            for (var j = 0; j < length - i - 1; j++) {
-                //Type guard. Checks out only number[] inside this if
-                if (this.collection instanceof Array) {
-                    if (this.collection[j] > this.collection[j + 1]) {
-                        var temp = this.collection[j];
-                        this.collection[j] = this.collection[j + 1];
-                        this.collection[j + 1] = temp;
-                    }
-                }
-                // in Type Guard. typeof works only for number, string and boolean.
-                if (typeof this.collection === 'string') {
-                }
-            }
-        }
-    };
-    return Sorter;
-}());
-var sorter = new Sorter([10, 3, -5, 0]);
+Object.defineProperty(exports, "__esModule", { value: true });
+var Sorter_1 = require("./Sorter");
+var NumbersCollection_1 = require("./NumbersCollection");
+var CharactersCollection_1 = require("./CharactersCollection");
+var LinkedList_1 = require("./LinkedList");
+var numbersCollection = new NumbersCollection_1.NumbersCollection([50, 3, -5, 0]);
+var sorter = new Sorter_1.Sorter(numbersCollection);
 sorter.sort();
-console.log(sorter.collection);
+console.log(numbersCollection.data);
+var charactersCollection = new CharactersCollection_1.CharactersCollection('XaayBb');
+var sorterChar = new Sorter_1.Sorter(charactersCollection);
+sorterChar.sort();
+console.log(charactersCollection.data);
+var linkedList = new LinkedList_1.LinkedList();
+linkedList.add(500);
+linkedList.add(-9);
+linkedList.add(-3);
+linkedList.add(4);
+linkedList.add(7);
+var sorterLinkedList = new Sorter_1.Sorter(linkedList);
+sorterLinkedList.sort();
+console.log(linkedList.print());

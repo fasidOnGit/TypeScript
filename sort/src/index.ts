@@ -1,32 +1,26 @@
-class Sorter {
-  constructor(public collection: number[] | string) {}
+import {Sorter} from "./Sorter";
+import {NumbersCollection} from "./NumbersCollection";
+import {CharactersCollection} from "./CharactersCollection";
+import {LinkedList} from "./LinkedList";
 
-  /**
-   * Bubble sort.
-   */
-  sort(): void {
-    const { length } = this.collection;
-
-    for (let i=0; i < length; i++) {
-      for (let j=0; j < length - i -1; j++) {
-        //Type guard. Checks out only number[] inside this if
-        if (this.collection instanceof Array) {
-          if(this.collection[j] > this.collection[j + 1]) {
-            const temp = this.collection[j];
-            this.collection[j] = this.collection[j+1];
-            this.collection[j+1] = temp;
-          }
-        }
-
-        // in Type Guard. typeof works only for number, string and boolean.
-        if (typeof this.collection === 'string') {
-
-        }
-      }
-    }
-  }
-}
-
-const sorter = new Sorter([10, 3, -5, 0]);
+const numbersCollection = new NumbersCollection([50, 3, -5, 0]);
+const sorter = new Sorter(numbersCollection);
 sorter.sort();
-console.log(sorter.collection);
+console.log(numbersCollection.data);
+
+const charactersCollection = new CharactersCollection('XaayBb');
+const sorterChar = new Sorter(charactersCollection);
+sorterChar.sort();
+console.log(charactersCollection.data);
+
+
+const linkedList = new LinkedList();
+linkedList.add(500);
+linkedList.add(-9);
+linkedList.add(-3);
+linkedList.add(4);
+linkedList.add(7);
+
+const sorterLinkedList = new Sorter(linkedList);
+sorterLinkedList.sort();
+console.log(linkedList.print());
