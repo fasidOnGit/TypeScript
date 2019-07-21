@@ -4,13 +4,11 @@ import {CharactersCollection} from "./CharactersCollection";
 import {LinkedList} from "./LinkedList";
 
 const numbersCollection = new NumbersCollection([50, 3, -5, 0]);
-const sorter = new Sorter(numbersCollection);
-sorter.sort();
+numbersCollection.sort();
 console.log(numbersCollection.data);
 
 const charactersCollection = new CharactersCollection('XaayBb');
-const sorterChar = new Sorter(charactersCollection);
-sorterChar.sort();
+charactersCollection.sort();
 console.log(charactersCollection.data);
 
 
@@ -20,7 +18,7 @@ linkedList.add(-9);
 linkedList.add(-3);
 linkedList.add(4);
 linkedList.add(7);
+linkedList.add(-7);
 
-const sorterLinkedList = new Sorter(linkedList);
-sorterLinkedList.sort();
+linkedList.sort();
 console.log(linkedList.print());

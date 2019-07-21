@@ -1,0 +1,7 @@
+Abstract Classes
+ - Can't be used to create an object directly. a.k.a Cannot instantiate
+ - Only used as a parent class.
+ - Can contain real implmentation for some methods.
+ - The implemented methods can refer to other methods that don't actually just yet.
+ (we still have to provide the names and types for the un-implmeneted methods)
+ - Can make child classes promise to implement some other method.
