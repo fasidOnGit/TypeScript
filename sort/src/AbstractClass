@@ -5,3 +5,16 @@ Abstract Classes
  - The implemented methods can refer to other methods that don't actually just yet.
  (we still have to provide the names and types for the un-implmeneted methods)
  - Can make child classes promise to implement some other method.
+
+
+Interfaces vs Abstract Classes
+
+Interfaces:
+    - Sets up contract between different classes.
+    - Use when we have very different objects that we want to work together.
+    - Promotes loose coupling.
+
+Abstract Classes:
+    - Sets up a contract between different classes.
+    - Use when we are trying to build up a definition of an object.
+    - Strongly couples classes together.  (A downside though!).

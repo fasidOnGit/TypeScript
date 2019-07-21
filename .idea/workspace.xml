@@ -2,15 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="15cf746f-bbc8-4a6b-aeb6-223c4c948b4d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sort/build/CharactersCollection.js" beforeDir="false" afterPath="$PROJECT_DIR$/sort/build/CharactersCollection.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sort/build/LinkedList.js" beforeDir="false" afterPath="$PROJECT_DIR$/sort/build/LinkedList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sort/build/NumbersCollection.js" beforeDir="false" afterPath="$PROJECT_DIR$/sort/build/NumbersCollection.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sort/build/Sorter.js" beforeDir="false" afterPath="$PROJECT_DIR$/sort/build/Sorter.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sort/build/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/sort/build/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sort/src/AbstractClass" beforeDir="false" afterPath="$PROJECT_DIR$/sort/src/AbstractClass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sort/src/CharactersCollection.ts" beforeDir="false" afterPath="$PROJECT_DIR$/sort/src/CharactersCollection.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sort/src/LinkedList.ts" beforeDir="false" afterPath="$PROJECT_DIR$/sort/src/LinkedList.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sort/src/NumbersCollection.ts" beforeDir="false" afterPath="$PROJECT_DIR$/sort/src/NumbersCollection.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sort/src/Sorter.ts" beforeDir="false" afterPath="$PROJECT_DIR$/sort/src/Sorter.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sort/src/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/sort/src/index.ts" afterDir="false" />
     </list>
@@ -25,19 +20,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/sort/src/index.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="23" column="26" lean-forward="true" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
+            <state relative-caret-position="432">
+              <caret line="24" column="25" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="25" />
               <folding>
-                <element signature="e#0#32#0" expanded="true" />
+                <element signature="e#0#54#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sort/src/LinkedList.ts">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="126">
@@ -67,8 +62,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sort/src/Sorter.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="9" column="86" selection-start-line="9" selection-start-column="86" selection-end-line="9" selection-end-column="86" />
+            <state relative-caret-position="504">
+              <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -76,8 +74,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sort/src/AbstractClass">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+            <state relative-caret-position="360">
+              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
             </state>
           </provider>
         </entry>
@@ -85,8 +83,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sort/src/CharactersCollection.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="9" column="3" lean-forward="true" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
+            <state relative-caret-position="36">
+              <caret line="2" column="49" selection-start-line="2" selection-start-column="49" selection-end-line="2" selection-end-column="49" />
             </state>
           </provider>
         </entry>
@@ -160,11 +158,11 @@
         <option value="$PROJECT_DIR$/sort/tsconfig.json" />
         <option value="$PROJECT_DIR$/sort/package.json" />
         <option value="$PROJECT_DIR$/sort/src/NumbersCollection.ts" />
-        <option value="$PROJECT_DIR$/sort/src/AbstractClass" />
+        <option value="$PROJECT_DIR$/sort/src/LinkedList.ts" />
         <option value="$PROJECT_DIR$/sort/src/Sorter.ts" />
         <option value="$PROJECT_DIR$/sort/src/CharactersCollection.ts" />
+        <option value="$PROJECT_DIR$/sort/src/AbstractClass" />
         <option value="$PROJECT_DIR$/sort/src/index.ts" />
-        <option value="$PROJECT_DIR$/sort/src/LinkedList.ts" />
       </list>
     </option>
   </component>
@@ -260,7 +258,7 @@
       <updated>1562509813627</updated>
       <workItem from="1562509814945" duration="7257000" />
       <workItem from="1563102881125" duration="11780000" />
-      <workItem from="1563639137593" duration="5840000" />
+      <workItem from="1563639137593" duration="6830000" />
     </task>
     <task id="LOCAL-00001" summary="Done with low level features">
       <created>1562509939614</created>
@@ -273,7 +271,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24877000" />
+    <option name="totallyTimeSpent" value="25867000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="992" y="24" width="928" height="1056" extended-state="4" />
@@ -433,17 +431,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sort/src/AbstractClass">
+    <entry file="file://$PROJECT_DIR$/sort/src/CharactersCollection.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        <state relative-caret-position="36">
+          <caret line="2" column="49" selection-start-line="2" selection-start-column="49" selection-end-line="2" selection-end-column="49" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sort/src/Sorter.ts">
+    <entry file="file://$PROJECT_DIR$/sort/src/LinkedList.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="86" selection-start-line="9" selection-start-column="86" selection-end-line="9" selection-end-column="86" />
+        <state relative-caret-position="126">
+          <caret line="7" column="39" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
         </state>
       </provider>
     </entry>
@@ -454,27 +452,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sort/src/CharactersCollection.ts">
+    <entry file="file://$PROJECT_DIR$/sort/src/Sorter.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="3" lean-forward="true" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
+        <state relative-caret-position="504">
+          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sort/src/AbstractClass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sort/src/index.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="23" column="26" lean-forward="true" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
+        <state relative-caret-position="432">
+          <caret line="24" column="25" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="25" />
           <folding>
-            <element signature="e#0#32#0" expanded="true" />
+            <element signature="e#0#54#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sort/src/LinkedList.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="39" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
         </state>
       </provider>
     </entry>

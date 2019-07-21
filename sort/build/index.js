@@ -17,4 +17,5 @@ linkedList.add(4);
 linkedList.add(7);
 linkedList.add(-7);
 linkedList.sort();
-console.log(linkedList.print());
+linkedList.print();
+console.log('All Good!');

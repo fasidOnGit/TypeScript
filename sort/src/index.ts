@@ -1,4 +1,3 @@
-import {Sorter} from "./Sorter";
 import {NumbersCollection} from "./NumbersCollection";
 import {CharactersCollection} from "./CharactersCollection";
 import {LinkedList} from "./LinkedList";
@@ -21,4 +20,6 @@ linkedList.add(7);
 linkedList.add(-7);
 
 linkedList.sort();
-console.log(linkedList.print());
+linkedList.print();
+
+console.log('All Good!');
