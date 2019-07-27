@@ -4,9 +4,6 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var fs_1 = __importDefault(require("fs"));
-/**
- * This is a backup CSV File reader file. Since we are going to refactor alot.
- */
 var CsvFileReader = /** @class */ (function () {
     function CsvFileReader(filename) {
         this.filename = filename;
@@ -17,7 +14,7 @@ var CsvFileReader = /** @class */ (function () {
             encoding: 'utf-8'
         })
             .split('\n')
-            .map(function (row) { return row.split(','); });
+            .map(function (row) { return row.split(','); }).map(this.mapRow);
     };
     return CsvFileReader;
 }());
