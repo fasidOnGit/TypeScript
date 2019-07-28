@@ -3,11 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="15cf746f-bbc8-4a6b-aeb6-223c4c948b4d" name="Default Changelist" comment="Implmented Gernerics">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stats/build/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/stats/build/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stats/build/inheritance/MatchReader.js" beforeDir="false" afterPath="$PROJECT_DIR$/stats/build/inheritance/MatchReader.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stats/src/MatchReader.ts" beforeDir="false" afterPath="$PROJECT_DIR$/stats/src/MatchReader.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stats/src/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/stats/src/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stats/src/inheritance/MatchReader.ts" beforeDir="false" afterPath="$PROJECT_DIR$/stats/src/inheritance/MatchReader.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Features/generics.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Features/generics.ts" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -115,7 +111,7 @@
       <workItem from="1563774897665" duration="13000" />
       <workItem from="1563978411624" duration="837000" />
       <workItem from="1564023414347" duration="20000" />
-      <workItem from="1564210632630" duration="13081000" />
+      <workItem from="1564210632630" duration="15443000" />
     </task>
     <task id="LOCAL-00001" summary="Done with low level features">
       <created>1562509939614</created>
