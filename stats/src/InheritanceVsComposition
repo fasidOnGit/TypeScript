@@ -1,0 +1,63 @@
+Inheritance :
+We had abstract `class CsvFileReader` that is extended in `class MatchReader`
+
+Composition:
+We had `class MatchReader` that accepts a instance of a class that satisfies `interface DataReader`
+benifit of this approach we can easily swap readers as we desire.
+
+Mneumonic for Inheritance and Composition:
+
+Inheritance --> Characterized by an `is a` relationship between two classes Eg: ChildReader is a ParentFileReader.
+ MatchReader is a CsvFileReader.  Since the child class has the access to all the methods and properties in CsvFileReader
+
+Some Analogies:
+Let's take an example of creating a Window (House Window).
+class Window {
+    open: boolean;
+    toggleOpen(): void;
+    height: number;
+    width: number;
+    area(): number;
+}
+
+Now, lets create a Wall.
+class Wall {
+    color: string;
+    height: number;
+    width: number;
+    area(): number;
+}
+
+Notice that both class Window and Wall share a bunch of common properties. and there is room for code reuse here.
+
+So we could have a class Rectangle.
+class Rectangle {
+    height: number;
+    width: number;
+    area(): number;
+}
+
+So now make sure that Wall extends Rectangle. But we would endup another class for a window that is not circle.`class CircleWindow`
+Notice that this is code duplication.
+So we abandon Inheritance and use Composition to the rescue
+
+because in composition we could an another property called `dimensions` and assign it with some interface `Shape`
+and the classes like Circle, Rectangle can implement Shapes.
+
+Composition --> Characterized by an `has a` relationship between two classes
+
+Composition vs Inheritance  - Common misconception
+"Favor object composition over class inheritance"  - Design Patterns Book.
+But above sentence is 100% misunderstood in Javascript.
+
+The Book also says:
+ Delegation is a way of making composition as powerful for reuse as inheritance.
+
+ Instead of making Window as subset of Rectangle (Inheritance). The class Window might reuse the behaviour of Rectangle by keeping a Rectangle instance variable
+ and delegating Rectangle-specific behaviour to it.
+
+ In other words, Instead of Window being a Rectangle. it would have a Rectangle.
+
+So, basically. class Window can have a member which is a reference to the instance of class Rectangle.
+
+This is delegation.  So, the book suggests that using delegation pattern in composition for code reuse.
