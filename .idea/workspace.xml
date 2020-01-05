@@ -2,16 +2,38 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="15cf746f-bbc8-4a6b-aeb6-223c4c948b4d" name="Default Changelist" comment="Implmented Gernerics">
-      <change afterPath="$PROJECT_DIR$/web/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/models/User.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/db.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/tsconfig.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/.cache/d9/fb67ed4cc3e4c6702433169ca75ad8.json" beforeDir="false" afterPath="$PROJECT_DIR$/web/.cache/d9/fb67ed4cc3e4c6702433169ca75ad8.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/web/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/web/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/models/User.ts" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/models/User.ts" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution>
+      <executable />
+    </execution>
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
   </component>
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
@@ -35,12 +57,18 @@
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ethereumSmartContracts" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/web" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -51,30 +79,31 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="fileTemplates" />
-    <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
+    <property name="ts.external.directory.path" value="$PROJECT_DIR$/web/node_modules/typescript/lib" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/web" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/stats/src/inheritance" />
       <recent name="$PROJECT_DIR$/stats/src" />
       <recent name="$PROJECT_DIR$/stats" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager" selected="npm.start (1)">
+  <component name="RunManager" selected="npm.start:db">
     <configuration name="start (1)" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/stats/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="start (2)" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/web/package.json" />
       <command value="run" />
       <scripts>
         <script value="start" />
@@ -93,21 +122,35 @@
       <envs />
       <method v="2" />
     </configuration>
+    <configuration name="start:db" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/web/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start:db" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.start:db" />
+        <item itemvalue="npm.start (2)" />
         <item itemvalue="npm.start (1)" />
         <item itemvalue="npm.start" />
       </list>
     </recent_temporary>
   </component>
   <component name="ServiceViewManager">
-    <option name="allServicesViewState">
-      <serviceView>
-        <treeState>
-          <expand />
-          <select />
-        </treeState>
-      </serviceView>
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
     </option>
   </component>
   <component name="SvnConfiguration">
@@ -127,6 +170,7 @@
       <workItem from="1563978411624" duration="837000" />
       <workItem from="1564023414347" duration="20000" />
       <workItem from="1564210632630" duration="17977000" />
+      <workItem from="1578213371096" duration="5810000" />
     </task>
     <task id="LOCAL-00001" summary="Done with low level features">
       <created>1562509939614</created>
@@ -151,7 +195,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -161,6 +207,36 @@
     <MESSAGE value="Done with low level features" />
     <MESSAGE value="Implmented Gernerics" />
     <option name="LAST_COMMIT_MESSAGE" value="Implmented Gernerics" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="2195" y="45" width="800" height="684" key="#TypeScript" timestamp="1578214588014">
+      <screen x="1920" y="0" width="1360" height="768" />
+    </state>
+    <state x="2195" y="45" width="800" height="684" key="#TypeScript/70.27.1850.1053/1920.0.1360.768@1920.0.1360.768" timestamp="1578214588014" />
+    <state width="1314" height="181" key="GridCell.Tab.0.bottom" timestamp="1578236149353">
+      <screen x="1920" y="0" width="1360" height="768" />
+    </state>
+    <state width="1314" height="181" key="GridCell.Tab.0.bottom/70.27.1850.1053/1920.0.1360.768@1920.0.1360.768" timestamp="1578236149353" />
+    <state width="1314" height="181" key="GridCell.Tab.0.center" timestamp="1578236149353">
+      <screen x="1920" y="0" width="1360" height="768" />
+    </state>
+    <state width="1314" height="181" key="GridCell.Tab.0.center/70.27.1850.1053/1920.0.1360.768@1920.0.1360.768" timestamp="1578236149353" />
+    <state width="1314" height="181" key="GridCell.Tab.0.left" timestamp="1578236149353">
+      <screen x="1920" y="0" width="1360" height="768" />
+    </state>
+    <state width="1314" height="181" key="GridCell.Tab.0.left/70.27.1850.1053/1920.0.1360.768@1920.0.1360.768" timestamp="1578236149353" />
+    <state width="1314" height="181" key="GridCell.Tab.0.right" timestamp="1578236149353">
+      <screen x="1920" y="0" width="1360" height="768" />
+    </state>
+    <state width="1314" height="181" key="GridCell.Tab.0.right/70.27.1850.1053/1920.0.1360.768@1920.0.1360.768" timestamp="1578236149353" />
+    <state x="2183" y="121" width="824" height="533" key="IDE.errors.dialog" timestamp="1578214603215">
+      <screen x="1920" y="0" width="1360" height="768" />
+    </state>
+    <state x="2183" y="121" width="824" height="533" key="IDE.errors.dialog/70.27.1850.1053/1920.0.1360.768@1920.0.1360.768" timestamp="1578214603215" />
+    <state x="2263" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1578214521134">
+      <screen x="1920" y="0" width="1360" height="768" />
+    </state>
+    <state x="2263" y="89" width="672" height="678" key="search.everywhere.popup/70.27.1850.1053/1920.0.1360.768@1920.0.1360.768" timestamp="1578214521134" />
   </component>
   <component name="masterDetails">
     <states>
