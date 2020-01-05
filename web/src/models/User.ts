@@ -1,8 +1,12 @@
+import axios from 'axios';
 interface UserProps {
+  id?: number;
   name: string;
   age: number;
 }
 export class User {
+  private HOST = 'http://localhost:3000';
+  private users = this.HOST + '/users';
   /**
    * Adding events
    */
@@ -40,5 +44,23 @@ export class User {
     handlers.forEach(callback => {
       callback();
     });
+  }
+
+  fetch(): void {
+    axios.get<UserProps>(this.users + '/' + this.get('id'))
+      .then((response) => {
+        this.set(response.data);
+      })
+  }
+
+  save(): void {
+    const id = this.get('id');
+    if (id) {
+      axios.put(this.users + '/' + id, {
+        ...this.data
+      })
+    } else {
+      axios.post(this.users, this.data);
+    }
   }
 }
